@@ -3,7 +3,7 @@ name: Process Data from Private Repo
 # Trigger this workflow manually or through a dispatch event
 on:
   workflow_dispatch:
-  schedule:
+  # schedule:
     # - cron: '0 */4 * * *'  
 
 jobs:
