@@ -242,7 +242,6 @@ async function updateInventoryFromFetchedCSV() {
             const quantity = parseInt(quantities[j]);
 
             if (!isNaN(quantity) && !isNaN(unitCost)) {
-                console.log(`Processing SKU: ${skuFull}, Size: ${size}, Qty: ${quantity}, Unit Cost: ${unitCost}`);
 
                 if (j == 0) {
                     await updateInventoryAndCost(skuFull, quantity, size, unitCost, true);
